@@ -147,6 +147,10 @@ summary .t{text-transform:uppercase;font-family:var(--body);font-weight:700;font
 .block p:last-child{font-size:1.1rem}
 .method .wrap > h2{max-width:none;margin-bottom:2rem}
 .hero-note{font-size:.95rem;color:var(--muted);max-width:36em;margin:-1rem 0 2rem}
+.deadline{display:inline-flex;align-items:center;gap:.6rem;margin:0 0 1.5rem;font-family:var(--body);font-weight:700;font-size:.95rem;letter-spacing:.09em;text-transform:uppercase;color:#140E03;background:var(--gold);padding:.65rem 1.15rem;border-radius:2px;outline:1px solid var(--gold);outline-offset:3px;box-shadow:0 8px 24px rgba(201,160,74,.3)}
+.deadline b{font-size:1.1em;font-weight:700}
+.mark{background:linear-gradient(transparent 58%,rgba(201,160,74,.45) 58%,rgba(201,160,74,.45) 94%,transparent 94%);-webkit-box-decoration-break:clone;box-decoration-break:clone;padding:0 .06em}
+.deadline::before{content:"";width:.65rem;height:.65rem;border-radius:50%;background:#140E03;flex:none}
 .hero-eyebrow{grid-column:1/-1;margin-bottom:0}
 .hero .wrap{row-gap:1.6rem}
 .hero-eyebrow i{font-style:italic;letter-spacing:.14em}
@@ -310,7 +314,8 @@ p.status{display:inline-flex;align-items:center;gap:.35rem;font-size:.6rem;font-
         <div><dt>Término</dt><dd>10/12/2026</dd></div>
         <div class="wide"><dt>Modalidade</dt><dd>online <span>· Aulas gravadas e postadas na área de membros do curso, cf. cronograma abaixo.</span></dd></div>
       </dl>
-      <p class="hero-note">Os alunos que ingressarem após o início do curso <span class="gold">poderão, sem qualquer prejuízo, assistir às aulas gravadas,</span> as quais ficarão disponíveis pelo <span class="gold">prazo de 18 (dezoito) meses</span> contados do dia da matrícula.</p>
+      <p class="hero-note">Os alunos que ingressarem <span class="mark gold">após o início das aulas</span> poderão, sem qualquer prejuízo, assistir às aulas gravadas, as quais <span class="mark gold">ficarão disponíveis pelo prazo de 18 (dezoito) meses contados do término das gravações.</span></p>
+      <p class="deadline">Inscrições abertas até <b>17/10/2026</b></p>
       <div class="hero-actions"><a class="cta hero-cta" href="#inscricao">Quero me inscrever</a><a class="ghost-link" href="#ebook">Conheça a metodologia do curso</a></div>
     </div>
   </div>
@@ -641,7 +646,7 @@ c-57 0 -67 3 -72 20 -9 29 -52 56 -130 81 -39 12 -120 41 -182 65 -183 71
       <p class="pc-price"><span class="cur">R$</span>397</p>
       <p class="pc-inst">ou em até <b>12x de R$ 41,06</b></p>
       <a class="cta buy-btn" href="https://pay.kiwify.com.br/4PeYe19" target="_blank" rel="noopener">Quero me inscrever</a>
-      <p class="pc-note">Valor promocional válido até 15/10/2026.</p>
+      <p class="pc-note">Inscrições e valor promocional válidos até 17/10/2026.</p>
       <p class="pc-secure">Pagamento seguro via Kiwify</p>
     </div>
   </div>
@@ -678,7 +683,7 @@ c-57 0 -67 3 -72 20 -9 29 -52 56 -130 81 -39 12 -120 41 -182 65 -183 71
 
 <footer>NUPEX São Bento</footer>
 
-<div class="sticky" id="sticky"><span class="st-price"><s>R$ 597</s> R$ 397</span><a class="cta" href="#inscricao">Quero me inscrever</a></div>
+<div class="sticky" id="sticky"><span class="st-price"><s>R$ 597</s> R$ 397 <b style="color:var(--gold-light);font-weight:700;font-size:.82em;letter-spacing:.04em">· até 17/10</b></span><a class="cta" href="#inscricao">Quero me inscrever</a></div>
 <script>
 (function(){var s=document.getElementById('sticky'),f=document.getElementById('inscricao'),h=document.querySelector('.hero-cta');
 if(!('IntersectionObserver' in window))return;var vf=false,vh=true;
